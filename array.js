@@ -1,31 +1,38 @@
-const name = ['Ak', 'drake']
+// const name = ['Ak', 'drake']
 
-name.push('Rattan')
+// name.push('Rattan')
 
-// console.log(name)
+// // console.log(name)
 
-let bank = 250
+// let bank = 250
 
-bank = 100
-// console.log(bank)
+// bank = 100
+// // console.log(bank)
 
-function repeater(fn) {
-    fn()
-    fn()
-    fn()
-}
+// function repeater(fn) {
+//     fn()
+//     fn()
+//     fn()
+// }
 
-function sayHello() {
-    console.log('hello')
-}
+// function sayHello() {
+//     console.log('hello')
+// }
 
-repeater(sayHello)
+// repeater(sayHello)
 
-const video = ["pranking someboy", "how to java", "html tutorial"];
+const videos = ["pranking someboy", "how to java", "html tutorial"];
 
 //map
-const newVideos = video.map(function (video) {
-  return video.toUpperCase();
-});
+// const newVideos = video.map(function (video) {
+//   return video.toUpperCase();
+// });
 
-console.log(newVideos);
+// console.log(newVideos);
+
+//find
+const searchTutorial = videos.find(function(video){
+  return video.includes('java')
+})
+
+console.log(searchTutorial)
